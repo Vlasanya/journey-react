@@ -1,0 +1,60 @@
+.footer {
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+.footer::after {
+  content: url(../../../public/img/decore5.svg);
+  position: absolute;
+  width: 153px;
+  height: 166px;
+  right: 0;
+  bottom: 0;
+}
+.footerWrapper {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 124.5%;
+  color: #5E6282;
+}
+.footer .footerLogo {
+  width: 210px;
+}
+.footer ul h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 124.5%;
+  color: #080809;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 900px) {
+  .footer ul h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+.footer ul li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  color: #5E6282;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 900px) {
+  .footer ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=footer.module.css.map */

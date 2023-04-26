@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #eaeaea;
+}
+.header h1 {
+  margin: 0;
+}
+.header .header_logo {
+  margin-right: 100px;
+}
+.header .header_logo img {
+  margin-right: 15px;
+  width: 115px;
+  height: 34px;
+}
+.header .header_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 850px;
+  width: 100%;
+}
+.header .header_menu .item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #212832;
+}
+.header .header_menu .item svg {
+  width: 18px;
+  height: 18px;
+  fill: #5a5657;
+}/*# sourceMappingURL=Header.module.css.map */

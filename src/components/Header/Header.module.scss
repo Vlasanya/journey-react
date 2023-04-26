@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    h1 {
+      margin: 0;
+    }
+    border-bottom: 1px solid #eaeaea;
+    .header_logo {
+      margin-right: 100px;
+      & img{
+        margin-right: 15px;
+        width: 115px;
+        height: 34px;
+      }}
+    .header_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      max-width: 850px;
+      width: 100%;
+      .item {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #212832;
+        & svg {
+        width: 18px;
+        height: 18px;
+        fill: #5a5657;
+      }}
+    }
+  }

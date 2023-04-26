@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 314px;
+  min-height: 457px;
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  border-radius: 24px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+.card .favourite {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  cursor: pointer;
+}
+.card .favourite .like {
+  width: 42px;
+  height: 42px;
+}
+.card .add {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.card .card_text {
+  padding: 25px;
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  width: 101%;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.card .card_text p {
+  margin-bottom: 20px;
+  flex: 1;
+}
+.card .card_text svg {
+  margin-right: 15px;
+}/*# sourceMappingURL=Card.module.css.map */
