@@ -37,10 +37,10 @@ function Card({imageUrl, name, price, period, addButton, id, onFavourite, favour
                 <rect x="0" y="0" rx="10" ry="10" width="314" height="353" /> 
                 <rect x="220" y="281" rx="0" ry="0" width="24" height="6" />
               </ContentLoader> : <> {onFavourite && (<div className={styles.favourite} onClick={onClickFavourite}>
-                <img src={isFavourite ? "/img/like-active.svg" : "/img/like.svg"} alt="like" className={styles.like}/>
+                <img src={process.env.PUBLIC_URL + (isFavourite ? "/img/like-active.svg" : "/img/like.svg")} alt="like" className={styles.like}/>
             </div>)}
       
-            <img src={imageUrl} alt="Rome"></img>
+            <img src={process.env.PUBLIC_URL + imageUrl} alt={name}></img>
             <div className={styles.card_text}>
                 <div className="d-flex justify-between">
                     <p>{name}</p>
@@ -52,7 +52,7 @@ function Card({imageUrl, name, price, period, addButton, id, onFavourite, favour
                     </svg>
                     <p> {period}</p>
 
-                    {addButton && (<img src={isItemAdded(id)? "/img/check.svg" : "/img/add.svg"} alt="add" width={42} height={42} className={styles.add} onClick={onClickAdd}></img>)}
+                    {addButton && (<img src={process.env.PUBLIC_URL + (isItemAdded(id) ? "/img/check.svg" : "/img/add.svg")} alt="add" width={42} height={42} className={styles.add} onClick={onClickAdd}></img>)}
                     
                 </div>
             </div></>

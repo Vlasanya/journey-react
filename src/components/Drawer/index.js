@@ -45,21 +45,21 @@ function Drawer({onClose, onRemove, items =[], opened}) {
     return (
         <div className={`${styles.overlay} ${opened ? styles.overlayVisible : ''}`}> 
             <div className={styles.drawer}>
-                <h2 className="mb-30 d-flex justify-between align-center">Cart<img onClick={onClose} src="/img/close.svg" alt="close" width={42} height={42}></img></h2>
+                <h2 className="mb-30 d-flex justify-between align-center">Cart<img onClick={onClose} src={process.env.PUBLIC_URL + "/img/close.svg"} alt="close" width={42} height={42}></img></h2>
                 {
                     items.length > 0 ? 
                     <div className={styles.cartBlock}>
                         <div className={styles.items}>
                             {items.map((obj) => (
                             <div key={obj.id} className={styles.cartItem}>
-                        <img src={obj.imageUrl} alt="Rome"  className="mr-20"></img>
+                        <img src={process.env.PUBLIC_URL + obj.imageUrl} alt={obj.name}  className="mr-20"></img>
                             <div className={styles.card_text}>
                             <div>
                                 <p>{obj.name}</p>
                                 <p>$ {obj.price}</p>
                                 <p>{obj.period}</p>
                             </div>
-                            <img src="/img/delete.svg" onClick={() => onRemove(obj.id)} width={42} height={42} alt="remove" className={styles.remove}></img>
+                            <img src={process.env.PUBLIC_URL + "/img/delete.svg"} onClick={() => onRemove(obj.id)} width={42} height={42} alt="remove" className={styles.remove}></img>
                             </div>
                             </div>))}
                         
@@ -77,11 +77,11 @@ function Drawer({onClose, onRemove, items =[], opened}) {
                             </li>
                         </ul>
                         <button className={styles.greenButton} onClick={onClickOrder} disabled={isLoading}>To order
-                        <img src="/img/arrow-right.svg" alt="arrow"></img></button>
+                        <img src={process.env.PUBLIC_URL + "/img/arrow-right.svg"} alt="arrow"></img></button>
                     </div> : <Info 
                                 title={ isOrderComplete ? "Your order is complete!" : "Your cart is empty :(" }
                                 description={ isOrderComplete ?  `Your order number #${orderId} will be transferred to the delivery service :)` : "Please, add at least one trip to your cart!" }
-                                image={isOrderComplete ? "/img/complete.svg" : "/img/basket.svg"}/>
+                                image={process.env.PUBLIC_URL + isOrderComplete ? "/img/complete.svg" : "/img/basket.svg"}/>
                 }
             </div>
         </div>

@@ -25,12 +25,12 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
             <p>Built Wicket longer admire do barton vanity itself do in it. <br/> Preferred to sportsmen it engrossed listening. Park gate <br/>sell they west hard for the.</p>
             <div className="d-flex">
               <button className="btns btns-yellow">Find out more</button>
-              <button className="btns btns-play"><img src="/img/play.svg" alt="Play-button" /> Play Demo</button>
+              <button className="btns btns-play"><img src={process.env.PUBLIC_URL +"/img/play.svg"} alt="Play-button" /> Play Demo</button>
             </div>
             
           </div>
           <div className="banner-img">
-            <img src="/img/banner.png" alt="Banner" />
+            <img src={process.env.PUBLIC_URL +"/img/banner.png"} alt="Banner" />
           </div>
         </section>
         <section className="categories">
@@ -38,22 +38,22 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
           <h2>We Offer Best Services</h2>
           <div className="categories-cards d-flex">
             <div className="categories-cards__card">
-              <img src="/img/weather.svg" alt='weather'/>
+              <img src={process.env.PUBLIC_URL +"/img/weather.svg"} alt='weather'/>
               <h6>Calculated Weather </h6>
               <p>Built Wicket longer admire do barton vanity itself do in it.</p>
             </div>
             <div className="categories-cards__card">
-              <img src="/img/flighs.svg" alt='flighs'/>
+              <img src={process.env.PUBLIC_URL +"/img/flighs.svg"} alt='flighs'/>
               <h6>Calculated Weather </h6>
               <p>Built Wicket longer admire do barton vanity itself do in it.</p>
             </div>
             <div className="categories-cards__card">
-              <img src="/img/events.svg" alt='events'/>
+              <img src={process.env.PUBLIC_URL +"/img/events.svg"} alt='events'/>
               <h6>Calculated Weather </h6>
               <p>Built Wicket longer admire do barton vanity itself do in it.</p>
             </div>
             <div className="categories-cards__card">
-              <img src="/img/settings.svg" alt='settings'/>
+              <img src={process.env.PUBLIC_URL +"/img/settings.svg"} alt='settings'/>
               <h6>Calculated Weather </h6>
               <p>Built Wicket longer admire do barton vanity itself do in it.</p>
             </div>
@@ -65,9 +65,9 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
           <h5>Top Selling</h5>
           <h2>{searchValue ? `Searching: ${searchValue}` : "Top Destinations"}</h2>
           <div className="search-block d-flex">
-            <img src="/img/search.svg" alt="Search"/>
+            <img src={process.env.PUBLIC_URL +"/img/search.svg"} alt="Search"/>
             <input onChange={onChangeSearchInput} value={searchValue} placeholder="Search..."/>
-            {searchValue && <img onClick={() => setSearchValue('')} src="/img/close.svg" width={42} height={42} alt="clear"></img>}
+            {searchValue && <img onClick={() => setSearchValue('')} src={process.env.PUBLIC_URL + "/img/close.svg"} width={42} height={42} alt="clear"></img>}
           </div>
           <div className="top-cards__wrapper">
             {renderItems()}                
@@ -82,7 +82,7 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
             <h2>Book your next trip in 3 easy steps</h2>
             <ul>
               <li className="book_item d-flex">
-                <img src="/img/1.svg" alt="Pic" />
+                <img src={process.env.PUBLIC_URL + "/img/1.svg"} alt="Pic" />
                 <div>
                   <h6>Choose Destination</h6>
                   <p>Lorem ipsum dolor sit amet, consectetur <br/>
@@ -90,7 +90,7 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
                 </div>
               </li>
               <li className="book_item d-flex">
-                <img src="/img/2.svg" alt="Pic" />
+                <img src={process.env.PUBLIC_URL + "/img/2.svg"} alt="Pic" />
                 <div>
                   <h6>Make Payment</h6>
                   <p>Lorem ipsum dolor sit amet, consectetur <br/>
@@ -98,7 +98,7 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
                 </div>
               </li>
               <li className="book_item d-flex">
-                <img src="/img/3.svg" alt="Pic" />
+                <img src={process.env.PUBLIC_URL + "/img/3.svg"} alt="Pic" />
                 <div>
                   <h6>Reach Airport on Selected Date</h6>
                   <p>Lorem ipsum dolor sit amet, consectetur <br/>
@@ -109,18 +109,18 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
           </div>
           <div className="book-right d-flex">
             <div className="book-wrapper">
-              <img src="/img/greese.png" alt="greese" />
+              <img src={process.env.PUBLIC_URL + "/img/greese.png"} alt="greese" />
               <h5>Trip To Greece</h5>
               <h6>14-29 June | <span> by Robbin joseph</span></h6>
               <ul className="d-flex mb-0">
                 <li>
-                 <img src='/img/leaf.svg' alt='leaf' width={36} height={36}/>
+                 <img src={process.env.PUBLIC_URL + '/img/leaf.svg'} alt='leaf' width={36} height={36}/>
                 </li>
                 <li>
-                 <img src='/img/map.svg' alt='map' width={36} height={36}/>
+                 <img src={process.env.PUBLIC_URL + '/img/map.svg'} alt='map' width={36} height={36}/>
                 </li>
                 <li>
-                 <img src='/img/send.svg' alt='send' width={36} height={36}/>
+                 <img src={process.env.PUBLIC_URL + '/img/send.svg'} alt='send' width={36} height={36}/>
                 </li>
               </ul>
               <p>24 people going</p>
@@ -137,7 +137,7 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
            
             <ul>
               <li>
-                <img src="" alt="" />
+                <img src={process.env.PUBLIC_URL + ""} alt="" />
                 <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
                 <h6>Mike taylor</h6>
                 <p>Lahore, Pakistan</p>
@@ -148,19 +148,19 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
         <section className="partners">
           <ul className="d-flex">
             <li>
-              <img src="/img/axon.png" alt="axon" />
+              <img src={process.env.PUBLIC_URL + "/img/axon.png"} alt="axon" />
             </li>
             <li>
-              <img src="/img/alitalia.png" alt="alitalia" />
+              <img src={process.env.PUBLIC_URL + "/img/alitalia.png"} alt="alitalia" />
             </li>
             <li>
-              <img src="/img/qantas.png" alt="qantas" />
+              <img src={process.env.PUBLIC_URL + "/img/qantas.png"} alt="qantas" />
             </li>
             <li>
-              <img src="/img/jetstar.png" alt="jetstar" />
+              <img src={process.env.PUBLIC_URL + "/img/jetstar.png"} alt="jetstar" />
             </li>
             <li>
-              <img src="/img/expedia.png" alt="expedia" />
+              <img src={process.env.PUBLIC_URL + "/img/expedia.png"} alt="expedia" />
             </li>
           </ul>
         </section>
