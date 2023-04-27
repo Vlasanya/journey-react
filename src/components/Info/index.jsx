@@ -10,7 +10,7 @@ const Info = ({title, description, image}) => {
         <h3>{title}</h3>
         <p>{description}</p>
         <button className={styles.greenButton} onClick={() => setCartOpened(false)}>
-            <img src="/img/arrow_back.svg" alt="arrow-back" className={styles.arrowBack}></img>Go back
+            <img src="img/arrow_back.svg" alt="arrow-back" className={styles.arrowBack}></img>Go back
         </button>
     </div>
   )

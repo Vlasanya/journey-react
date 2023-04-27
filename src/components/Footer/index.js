@@ -7,7 +7,7 @@ function Footer () {
         <footer className={styles.footer}>
           <div className={styles.footerWrapper}>
           <div className={styles.footerLogo}>
-              <img src='/img/logo-footer.svg' alt='logo-footer' width={152} height={66}/>
+              <img src='img/logo-footer.svg' alt='logo-footer' width={152} height={66}/>
               <p>Book your trip in minute, get full Control for much longer.</p>
             </div>
             <ul> 
@@ -32,22 +32,22 @@ function Footer () {
               <ul className={styles.social}>
                 <li>
                   <a href='/'>
-                  <img src='/img/fb.svg' alt='fb' width={42} height={42}></img>
+                  <img src='img/fb.svg' alt='fb' width={42} height={42}></img>
                   </a>
                   <a href='/'>
-                  <img src='/img/fb.svg' alt='twit' width={42} height={42}></img>
+                  <img src='img/fb.svg' alt='twit' width={42} height={42}></img>
                   </a>
                   <a href='/'>
-                  <img src='/img/fb.svg' alt='fb' width={42} height={42}></img>
+                  <img src='img/fb.svg' alt='fb' width={42} height={42}></img>
                   </a>
                 </li>
                 <li>Discover our app</li>
                 <li>
                   <a href='/'>
-                  <img src='/img/google.svg' alt='fb' width={107} height={35}></img>
+                  <img src='img/google.svg' alt='fb' width={107} height={35}></img>
                   </a>
                   <a href='/'>
-                  <img src='/img/apple.svg' alt='fb' width={107} height={35}></img>
+                  <img src='img/apple.svg' alt='fb' width={107} height={35}></img>
                   </a>
                 </li>
               </ul>

@@ -13,7 +13,7 @@ function Header(props) {
         <header className={styles.header}>
           <Link to="/" >
             <div className={styles.header_logo}>
-              <img src="/img/logo.svg"/>
+              <img src="img/logo.svg"/>
             </div>
           </Link>
         
@@ -22,16 +22,16 @@ function Header(props) {
             <li className={styles.item}>Hotels</li>
             <li className={styles.item}>Flights</li>
             <li className={styles.item} >
-              <Link to="/favourites"><img src='/img/favorite.svg' width={48} height={48}  alt='Favourites'/>
+              <Link to="/favourites"><img src='img/favorite.svg' width={48} height={48}  alt='Favourites'/>
               </Link>
                 
               </li>
             <li className={styles.item} onClick={props.onClickCart}>
-              <img src='/img/basket.svg' width={48} height={48}  alt='basket'/>
+              <img src='img/basket.svg' width={48} height={48}  alt='basket'/>
               <span>{totalPrice} USD</span></li>
             
             <li className={styles.item}>
-              <Link to='/orders'><img src='/img/user.svg' width={48} height={48}  alt='user'/>
+              <Link to='/orders'><img src='img/user.svg' width={48} height={48}  alt='user'/>
               </Link>
             
             </li>
