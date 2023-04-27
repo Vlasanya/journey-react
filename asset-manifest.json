@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/journey-react/static/css/main.b70db63a.css",
+    "main.js": "/journey-react/static/js/main.db1af728.js",
+    "static/media/body_bg.png": "/journey-react/static/media/body_bg.e7fc20204543ebd17279.png",
+    "static/media/decore.svg": "/journey-react/static/media/decore.f64b6e848ade046ecf83.svg",
+    "static/media/building.svg": "/journey-react/static/media/building.d8081e657821d6510e95.svg",
+    "static/media/decore3.svg": "/journey-react/static/media/decore3.48a3af29b07df1b10aaa.svg",
+    "static/media/decore5.svg": "/journey-react/static/media/decore5.29b5bb493f8ed50dccc0.svg",
+    "static/media/decore2.svg": "/journey-react/static/media/decore2.798b9f830110ed822797.svg",
+    "index.html": "/journey-react/index.html",
+    "static/media/decor4.svg": "/journey-react/static/media/decor4.68ee4ca0fc7269f6c815.svg",
+    "static/media/decor-hover.svg": "/journey-react/static/media/decor-hover.05a615aa9b2ff1812220.svg",
+    "main.b70db63a.css.map": "/journey-react/static/css/main.b70db63a.css.map",
+    "main.db1af728.js.map": "/journey-react/static/js/main.db1af728.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b70db63a.css",
+    "static/js/main.db1af728.js"
+  ]
+}
