@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  position: relative;
   border-bottom: 1px solid #eaeaea;
 }
 .header h1 {
@@ -16,23 +17,109 @@
   width: 115px;
   height: 34px;
 }
-.header .header_menu {
+
+nav {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  nav {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    display: visible;
+  }
+}
+
+.item {
+  font-size: 20px;
+  line-height: 22px;
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  color: #14183E;
+}
+.item svg {
+  width: 18px;
+  height: 18px;
+  fill: #5a5657;
+}
+
+.burger_menu {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: absolute;
+  top: 18%;
+  right: 0;
+  z-index: 5;
+}
+
+.menu__visible {
+  width: 40%;
+  height: 50vh;
+  background-color: #FFF1DA;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 15px;
+  align-items: flex-start;
+}
+
+.menu__hidden {
+  display: visible;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 850px;
   width: 100%;
+  padding: 15px;
 }
-.header .header_menu .item {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 22px;
-  color: #212832;
+@media screen and (max-width: 800px) {
+  .menu__hidden {
+    display: none;
+  }
 }
-.header .header_menu .item svg {
-  width: 18px;
-  height: 18px;
-  fill: #5a5657;
+
+.burger-bar__clicked {
+  width: 42px;
+  height: 12px;
+  background-color: #1a0b0b;
+  border-radius: 0.5em;
+}
+
+.burger-bar__clicked:nth-child(1) {
+  transform: rotate(45deg) translate(0.75em, 1.25em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar__clicked:nth-child(2) {
+  transform: scale(0.1);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar__clicked:nth-child(3) {
+  transform: rotate(135deg) translate(-0.5em, 1em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar__unclicked {
+  width: 42px;
+  height: 12px;
+  background-color: #1a0b0b;
+  border-radius: 0.5em;
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }/*# sourceMappingURL=Header.module.css.map */

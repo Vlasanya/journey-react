@@ -100,6 +100,7 @@ function App() {
       <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveItem} opened={cartOpened}/>
       
         <Header onClickCart={() => setCartOpened(true)}/>
+       
         
         <Routes>
           <Route path='/favourites' exact element={<Favourites />}> </Route>
