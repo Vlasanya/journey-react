@@ -29,6 +29,7 @@ body {
 }
 .main .banner {
   margin-bottom: 100px;
+  display: flex;
 }
 @media screen and (max-width: 600px) {
   .main .banner {
@@ -390,6 +391,7 @@ body {
 
 .comments {
   margin-bottom: 100px;
+  justify-content: space-between;
 }
 .comments-left {
   max-width: 410px;
@@ -416,6 +418,7 @@ body {
   .comments {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 

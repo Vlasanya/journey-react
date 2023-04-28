@@ -1,10 +1,17 @@
 import React from 'react';
 import Card from '../components/Card';
-
+import Slider from '../components/Slider';
 
 
 function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToFavourite, onAddToCart, isLoading}) {
   
+  const slides = [
+    {url: '/img/user.svg', userName: 'Mike taylor', comments: 'On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.', homePlace: 'Lahore, Pakistan'},
+    {url: '/img/user.png', userName: 'Taylor Swift', comments: 'On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.', homePlace: 'Berlin, Germany'},
+    {url:'/img/user.svg', userName: 'John Dou', comments: 'On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.', homePlace: 'New York, US'},
+    {url: '/img/user.png', userName: 'Josef Zahn', comments: 'On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.', homePlace: 'Singapur, Singapur'},
+  ]
+
   const renderItems = () => {
     const filterItems = items.filter((item ) => item.name.toLowerCase().includes(searchValue.toLowerCase()));
     return (isLoading ? [...Array(9)] : filterItems).map((item, index) => (
@@ -112,6 +119,7 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
               <img src={process.env.PUBLIC_URL + "/img/greese.png"} alt="greese" />
               <h5>Trip To Greece</h5>
               <h6>14-29 June | <span> by Robbin joseph</span></h6>
+    
               <ul className="d-flex mb-0">
                 <li>
                  <img src={process.env.PUBLIC_URL + '/img/leaf.svg'} alt='leaf' width={36} height={36}/>
@@ -133,16 +141,11 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
             <h2>What people say
               about Us.</h2>
           </div>
+          
           <div className="comments-right swipper">
            
-            <ul>
-              <li>
-                <img src={process.env.PUBLIC_URL + ""} alt="" />
-                <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
-                <h6>Mike taylor</h6>
-                <p>Lahore, Pakistan</p>
-              </li>
-            </ul>
+            <Slider slides={slides} />
+            
           </div>
         </section>
         <section className="partners">

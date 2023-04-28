@@ -81,7 +81,7 @@ function Drawer({onClose, onRemove, items =[], opened}) {
                     </div> : <Info 
                                 title={ isOrderComplete ? "Your order is complete!" : "Your cart is empty :(" }
                                 description={ isOrderComplete ?  `Your order number #${orderId} will be transferred to the delivery service :)` : "Please, add at least one trip to your cart!" }
-                                image={process.env.PUBLIC_URL + isOrderComplete ? "/img/complete.svg" : "/img/basket.svg"}/>
+                                image={process.env.PUBLIC_URL + (isOrderComplete ? "/img/complete.svg" : "/img/basket.svg")}/>
                 }
             </div>
         </div>

@@ -11,6 +11,7 @@
       height: 166px;
       right: 0;
       bottom: 0;
+      z-index: -1;
     }
     &Wrapper {
       margin-bottom: 50px;
@@ -56,4 +57,15 @@
         }
       }
     }
+  }
+  .social {
+      a {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        
+        &:hover {
+          scale: 1.3;
+        }
+      }
   }

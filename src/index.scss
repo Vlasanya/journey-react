@@ -7,13 +7,13 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 .container {
   background-image: url(../public/img/body_bg.png);
   background-position: top right;
   background-size: 100%;
   background-repeat: no-repeat;
+  
 }
 
 .wrapper {
@@ -28,6 +28,7 @@ body {
   flex: 1;
   .banner {
     margin-bottom: 100px;
+    display: flex;
     @media screen and (max-width: 600px) {
       flex-direction: column;
       justify-content: center;
@@ -382,6 +383,7 @@ body {
 
 .comments {
   margin-bottom: 100px;
+  justify-content: space-between;
   &-left {
     max-width: 410px;
     h4 {
@@ -406,6 +408,7 @@ body {
   @media screen and (max-width: 900px) {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 .partners {

@@ -39,7 +39,7 @@ function Header(props) {
             </div>
           </Link>
         
-          <ul className={`${styles.header_menu} ${menuVisible ? visibleMenu : menuHidden}`}>
+          <ul className={`${menuVisible ? visibleMenu : menuHidden}`}>
             <li className={styles.item}>Desitnations</li>
             <li className={styles.item}>Hotels</li>
             <li className={styles.item}>Flights</li>

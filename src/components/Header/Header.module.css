@@ -64,7 +64,7 @@ nav {
   width: 40%;
   height: 50vh;
   background-color: #FFF1DA;
-  padding: 15px;
+  padding: 15px !important;
   position: absolute;
   top: 0;
   right: 0;

@@ -1,0 +1,66 @@
+.reviewsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.reviews {
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    color: #5E6282;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px 80px 25px 25px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.comments {
+    font-size: 16px;
+    line-height: 32px;
+    color: #5E6282;
+    margin-bottom: 35px;
+}
+.userPhoto {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: -7%;
+    left: -38px;
+}
+.userHome {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 35px;
+}
+.userName {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 5px;
+}
+.arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+    img:hover {
+        background: #FFFFFF;
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+        border-radius: 10px;
+    }
+}
+.dotsCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    .dots {
+        cursor: pointer;
+        margin: 0 3px;
+    }
+}

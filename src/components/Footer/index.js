@@ -29,13 +29,13 @@ function Footer () {
               <li>Airline</li>
             </ul>
             <div>
-              <ul className={styles.social}>
-                <li>
+              <ul className={styles.socialBlock}>
+                <li className={styles.social}>
                   <a href='/'>
                   <img src={process.env.PUBLIC_URL + '/img/fb.svg'} alt='fb' width={42} height={42}></img>
                   </a>
                   <a href='/'>
-                  <img src={process.env.PUBLIC_URL + '/img/fb.svg'} alt='twit' width={42} height={42}></img>
+                  <img src={process.env.PUBLIC_URL + '/img/twit.svg'} alt='twit' width={42} height={42}></img>
                   </a>
                   <a href='/'>
                   <img src={process.env.PUBLIC_URL + '/img/fb.svg'} alt='fb' width={42} height={42}></img>
